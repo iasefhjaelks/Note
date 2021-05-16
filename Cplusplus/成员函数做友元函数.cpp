@@ -3,7 +3,8 @@
 using namespace std;
 
 //只让visit做Building的好朋友，visit2不可以访问私有属性
-class Building;
+class Building;//这里必须声明Building，否则编辑器会不知道goodGay中的Building是干什么的
+//https://blog.csdn.net/qq_43259304/article/details/89605118
 class goodGay{
     public:
         goodGay();
